@@ -1,7 +1,7 @@
-seed-element
+da-calculator-element
 ============
 
-See the [component page](http://polymerlabs.github.io/seed-element) for more information.
+See the [component page](http://polymerlabs.github.io/da-calculator-element) for more information.
 
 ## Getting Started
 
