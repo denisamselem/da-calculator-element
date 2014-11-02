@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="da-calculator-element.css">
 	<div class="{{theme}}" layout  center>
 		<div id="daConsole" class="daConsole">
-			<h2>da-calculator-element instance using the {{theme}} theme.</h2>
+			<h2>da-calculator-element instanciated using <span class="insist">{{currentThemeAsText}}</span></h2>
 			<div id="line"></div>
 		</div>
 		<div id="calculator">
@@ -69,70 +69,6 @@
 	</div>
   </template>
 
-  <script>
-      Polymer({
-	      theme:"default",
-	      validKeys : "+=/*x-0123456789c",
-
-	      ready: function() {
-	        this.addEventListener('click', this.onClick);
-	        this.consoleLog("Ready!");
-	      },
-
-	      consoleLog: function(message) {
-			this.$.line.textContent += message;
-	      },
-
-	      onClick: function(evt) {
-	      	var target = evt.path[0];
-	      	if (target.value) {
-	      		var value = target.value.trim().toLowerCase();
-	      		if (this.validKeys.indexOf(value)>=0) {
-	      			if(value=="c") {
-	      				this.inputReset();
-	      			} else 
-	      			if (value=="=") {
-	      				this.inputCalculate();
-	      			} else 
-	      			if (value=="x") {
-	      				this.inputAppend("*");
-	      			} else 
-		      			this.inputAppend(value);
-	      		}
-	      	}
-	      },
-
-	      inputAppend: function(more) {
-	      	if(this.$ && this.$.calcInput)
-		      	this.$.calcInput.value += more;
-	      },
-
-	      inputReset: function() {
-	      	if(this.$ && this.$.calcInput)
-		      	this.$.calcInput.value = '';	      	
-	      },
-
-	      /*********************************************************************************************
-	      ************** BETTER PAY ATTENTION TO THIS **************************************************
-	      **
-	      **				Using EVAL() to calculate()
-	      **
-	      **	TODO: 			pros/cons of sticking to eval() + extra input filtering and sanetization 
-	      **			versus 	pros/cons of writing our own calculator expression parser and evaluator.
-	      */
-	      inputCalculate: function() {
-	      	if(this.$ && this.$.calcInput)
-		      	this.$.calcInput.value = eval(this.$.calcInput.value);
-	      },
-
-	      themeChanged: function() {
-	        if (this.theme) {
-	          this.theme = this.theme.toLowerCase();
-	      	}
-    	  }
-	    }
-   	);
-
-  </script>
+  <script src="da-calculator-element.js"></script>
 
 </polymer-element>
