@@ -1,11 +1,11 @@
 da-calculator-element
 ============
 
-See the [component page](http://polymerlabs.github.io/da-calculator-element) for more information.
+See the [component page](http://denisamselem.github.io/da-calculator-element) for more information.
 
 ## Getting Started
 
-We've put together a [guide to seed-element](http://www.polymer-project.org/docs/start/reusableelements.html) to help get you rolling.
+We've put together a [guide to da-calculator-element](http://www.polymer-project.org/docs/start/reusableelements.html) to help get you rolling.
 
 ## Testing Your Element
 
