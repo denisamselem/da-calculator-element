@@ -1,0 +1,7 @@
+{
+  "name": "da-calculator-element#gh-pages",
+  "private": true,
+  "dependencies": {
+    "da-calculator-element": "denisamselem/da-calculator-element#master"
+  }
+}

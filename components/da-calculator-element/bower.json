@@ -1,0 +1,34 @@
+{
+  "name": "da-calculator-element",
+  "version": "0.0.1",
+  "authors": [
+    "denis.amselem@gmail.com"
+  ],
+  "description": "My First Web Componnent, a-la Polymere",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "calculator",
+    "da-calculator"
+  ],
+  "main": "da-calculator.html",
+  "license": "MIT",
+  "homepage": "https://github.com/denisamselem/da-calculator-element/",
+  "ignore": [
+    "/.*",
+    "/tests/",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "../",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.4.2"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^0.7.3"
+  }
+}
